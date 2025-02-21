@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Popup Login & Registration Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+
+    .popup {
+      width: 350px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      text-align: center;
+    }
+
+    .popup h2 {
+      margin: 0 0 20px;
+      font-size: 24px;
+      color: #333;
+    }
+
+    .popup input {
+      width: 95%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .popup button {
+      width: 100%;
+      padding: 10px;
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .popup button:hover {
+      background: #0056b3;
+    }
+
+    .popup .toggle-link {
+      margin-top: 10px;
+      color: #007bff;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .popup .toggle-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="popup" id="popupForm">
+    <!-- Login Form -->
+    <div id="loginForm">
+      <h2>Login</h2>
+      <input type="text" placeholder="Username" required>
+      <input type="password" placeholder="Password" required>
+      <button>Login</button>
+      <a class="toggle-link" onclick="toggleForm()">Don't have an account? Register</a>
+    </div>
+
+    <!-- Registration Form -->
+    <div id="registrationForm" style="display: none;">
+      <h2>Register</h2>
+      <input type="text" placeholder="Username" required>
+      <input type="email" placeholder="Email" required>
+      <input type="password" placeholder="Password" required>
+      <button>Register</button>
+      <a class="toggle-link" onclick="toggleForm()">Already have an account? Login</a>
+    </div>
+  </div>
+
+  <script>
+    function toggleForm() {
+      const loginForm = document.getElementById("loginForm");
+      const registrationForm = document.getElementById("registrationForm");
+
+      if (loginForm.style.display === "none") {
+        loginForm.style.display = "block";
+        registrationForm.style.display = "none";
+      } else {
+        loginForm.style.display = "none";
+        registrationForm.style.display = "block";
+      }
+    }
+  </script>
+</body>
+</html>

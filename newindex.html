@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        a {
+            color: white; /* Default link color */
+            text-decoration: none; /* Remove underline */
+        }
+        a:hover {
+            color: red; /* Change color on hover */
+            text-decoration: underline; /* Add underline on hover */
+        }
+
+        /* Modal styles */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed;
+            z-index: 10;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+        }
+
+        .modal-content {
+            background-color: white;
+            margin: 10% auto;
+            padding: 20px;
+            border-radius: 10px;
+            width: 30%;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .close {
+            color: red;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .close:hover {
+            color: darkred;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>e-shoes</title>
+    <link rel="icon" type="image/x-icon" href="img/eshoe_icon.png">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav id="nav">
+        <div class="navTop">
+            <div class="navItem">
+                <img src="./img/es1.png" alt="">
+            </div>
+            <div class="navItem">
+                <div class="search">
+                    <input type="text" placeholder="Search..." class="searchInput">
+                    <img src="./img/search.png" width="20" height="20" alt="" class="searchIcon" style="padding-right: 20px">
+                    <img id="loginBtn" src="./img/login_icon.png" width="20" height="20" alt="Login" class="searchIcon" style="padding-right: 20px" >
+                    <a href="#"><img src="./img/wishlist_icon.png" width="20" height="20" alt="" class="searchIcon" style="padding-right: 20px"></a>
+                    <a href="#"><img src="./img/cart_icon2.png" width="20" height="20" alt="" class="searchIcon"></a>
+                </div>
+            </div>
+        </div>
+        <div class="navBottom">
+            <h3 class="menuItem"><a href="index.html">Home</a></h3>
+            <h3 class="menuItem"><a href="shop.html">Shop</a></h3>
+            <h3 class="menuItem"><a href="#">Kids' Shoes</a></h3>
+            <h3 class="menuItem"><a href="#">New Arrivals</a></h3>
+            <h3 class="menuItem"><a href="#">Sale</a></h3>
+        </div>
+    </nav>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Login</h2>
+            <form>
+                <input type="email" placeholder="Email" required><br><br>
+                <input type="password" placeholder="Password" required><br><br>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Your page content -->
+    <div class="slider">
+        <!-- Add your slider content here -->
+    </div>
+    <div class="gallery">
+        <!-- Add your gallery content here -->
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <!-- Add footer content here -->
+    </footer>
+
+    <script>
+        // Modal JavaScript
+        const modal = document.getElementById('loginModal');
+        const loginBtn = document.getElementById('loginBtn');
+        const closeBtn = document.querySelector('.close');
+
+        // Show modal when clicking login icon
+        loginBtn.onclick = function() {
+            modal.style.display = 'block';
+        }
+
+        // Close modal when clicking the close button
+        closeBtn.onclick = function() {
+            modal.style.display = 'none';
+        }
+
+        // Close modal when clicking outside of the modal content
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

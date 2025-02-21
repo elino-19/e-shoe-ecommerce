@@ -1,0 +1,191 @@
+[
+  {
+    "id": 1,
+    "name": "Louis Vuitton LV Trainer",
+    "price": 120,
+    "category": "Men",
+    "image": "image/Louis Vuitton LV Trainer.png",
+    "sizes": [7.5, 8, 9, 10],
+    "inStock": true
+  },
+  {
+    "id": 2,
+    "name": "Air Jordan 4",
+    "price": 150,
+    "category": "Women",
+    "image": "image/Air Jordan 4.png",
+    "sizes": [5, 6, 7, 8],
+    "inStock": false
+  },
+  {
+    "id": 3,
+    "name": "adidas Adizero Adios Pro Evo 1",
+    "price": 100,
+    "category": "Men",
+    "image": "image/adidas Adizero Adios Pro Evo 1.png",
+    "sizes": [6, 7, 8, 9],
+    "inStock": true
+  },
+  {
+    "id": 4,
+    "name": "Nike Air Force 1",
+    "price": 180,
+    "category": "Men",
+    "image": "image/Nike Air Force 1.png",
+    "sizes": [5, 6, 7, 8, 9],
+    "inStock": true
+  },
+    {
+    "id": 5,
+    "name": "Nike Pegasus",
+    "price": 120,
+    "category": "Men",
+    "image": "image/Nike Pegasus.png",
+    "sizes": [7, 8, 9, 10],
+    "inStock": true
+  },
+  {
+    "id": 6,
+    "name": "Jordan Spizike",
+    "price": 150,
+    "category": "Women",
+    "image": "image/Jordan Spizike.png",
+    "sizes": [5, 6, 7, 8],
+    "inStock": false
+  },
+  {
+    "id": 7,
+    "name": "LV Skate",
+    "price": 100,
+    "category": "Men",
+    "image": "image/LV Skate.png",
+    "sizes": [6, 7, 8, 9],
+    "inStock": true
+  },
+  {
+    "id": 8,
+    "name": "LV x Timberland",
+    "price": 180,
+    "category": "Women",
+    "image": "image/LV x Timberland.png",
+    "sizes": [5, 6, 7, 8, 9],
+    "inStock": true
+  },
+{
+    "id": 9,
+    "name": "New Balance 624",
+    "price": 120,
+    "category": "Men",
+    "image": "image/New Balance 624.png",
+    "sizes": [7, 8, 9, 10],
+    "inStock": true
+  },
+  {
+    "id": 10,
+    "name": "Adidas Forum Low",
+    "price": 150,
+    "category": "Women",
+    "image": "image/Adidas Forum Low.png",
+    "sizes": [5, 6, 7, 8],
+    "inStock": false
+  },
+  {
+    "id": 11,
+    "name": "adidas Run 60s",
+    "price": 100,
+    "category": "Men",
+    "image": "image/adidas Run 60s.png",
+    "sizes": [6, 7, 8, 9],
+    "inStock": true
+  },
+  {
+    "id": 12,
+    "name": "adidas OZWEEGO",
+    "price": 180,
+    "category": "Women",
+    "image": "image/adidas OZWEEGO.png",
+    "sizes": [5, 6, 7, 8, 9],
+    "inStock": true
+  },
+    {
+    "id": 13,
+    "name": "Adidas VS Pace 2.0",
+    "price": 120,
+    "category": "Men",
+    "image": "image/Adidas VS Pace.png",
+    "sizes": [7, 8, 9, 10],
+    "inStock": true
+  },
+  {
+    "id": 14,
+    "name": "Adidas SL 72 OG",
+    "price": 150,
+    "category": "Women",
+    "image": "image/Adidas SL 72 OG.png",
+    "sizes": [5, 6, 7, 8],
+    "inStock": false
+  },
+  {
+    "id": 15,
+    "name": "Adidas Samba",
+    "price": 100,
+    "category": "Men",
+    "image": "image/Adidas Samba.png",
+    "sizes": [6, 7, 8, 9],
+    "inStock": true
+  },
+  {
+    "id": 16,
+    "name": "ADIDAS RUN 70s",
+    "price": 180,
+    "category": "Women",
+    "image": "image/ADIDAS RUN 70s.png",
+    "sizes": [5, 6, 7, 8, 9],
+    "inStock": true
+  },
+{
+    "id": 17,
+    "name": "adidas Campus 00s",
+    "price": 180,
+    "category": "Women",
+    "image": "image/adidas Campus 00s.png",
+    "sizes": [5, 6, 7, 8, 9],
+    "inStock": true
+  },
+    {
+    "id": 18,
+    "name": "adidas OZWEEGO Black",
+    "price": 120,
+    "category": "Men",
+    "image": "image/adidas OZWEEGO Black.png",
+    "sizes": [7, 8, 9, 10],
+    "inStock": true
+  },
+  {
+    "id": 19,
+    "name": "adidas Campus 00s",
+    "price": 150,
+    "category": "Women",
+    "image": "image/adidas Campus 00s.jpg",
+    "sizes": [5, 6, 7, 8],
+    "inStock": false
+  },
+  {
+    "id": 20,
+    "name": "adidas Gazelle Bold",
+    "price": 100,
+    "category": "Women",
+    "image": "image/adidas Gazelle Bold.png",
+    "sizes": [6, 7, 8, 9],
+    "inStock": true
+  },
+    {
+    "id": 21,
+    "name": "adidas Court Tourino",
+    "price": 120,
+    "category": "Men",
+    "image": "image/adidas Court Tourino.png",
+    "sizes": [7, 8, 9, 10],
+    "inStock": true
+  }
+]

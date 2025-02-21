@@ -1,0 +1,190 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<title>e-shoes</title>
+<link rel="icon" type="image/x-icon" href="img/eshoe_icon.png">
+</head>
+
+<body>
+<nav id="nav">
+  <div class="navTop">
+    <div class="navItem"> <img src="./img/es1.png" alt=""> </div>
+    <div class="navItem">
+      <div class="search">
+        <input type="text" placeholder="Search..." class="searchInput">
+        <img src="./img/search.png" width="20" height="20" alt="" class="searchIcon" style="padding-right: 20px" > 
+		   <a herf="#"><img class="searchIcon"   class="login-btn" onclick="openModal()" src="./img/login_icon.png" width="20" height="20" alt="Login" style="padding-right: 20px" ></a>
+		  <a href="#"><img src="./img/wishlist_icon.png" width="20" height="20" alt="" class="searchIcon" style="padding-right: 20px"></a> 
+		  <a href="cart.html" id="cart-icon"> <img src="./img/cart_icon.png" width="20" height="20" alt="" class="searchIcon" style="padding-right: 20px"> <span class="cart-count"> 0 </span> <!-- Cart count will appear here --> 
+        </a> </div>
+    </div>
+  </div>
+  <div class="navBottom">
+    <h3 class="menuItem"><a href="index.html">Home</a></h3>
+    <h3 class="menuItem"><a href="shop.html">Women's Shoes</a></h3>
+    <h3 class="menuItem"><a href="shop.html"> Kids' Shoes</a></h3>
+    <h3 class="menuItem"><a href="shop.html">New Arrivals</a></h3>
+    <h3 class="menuItem"><a href="shop.html">Sale</a></h3>
+    <h3 class="menuItem" style="margin-left: auto; white-space: nowrap;">
+    <a href="#" id="filter-toggle" style="text-decoration: none; color: white; display: inline-flex; align-items: center;">🔍 Filter</a>
+  </h3> 
+  </div>
+</nav>
+<!-----------------------------------------------------------end of navigation -----------------------------------------------------------> 
+		    <!-- Login Modal -->
+<!-- Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <!-- Close Button -->
+            <span class="modal-close" onclick="closeModal()">&times;</span>
+
+            <!-- Login Form -->
+            <div id="loginForm">
+                <h2>Login</h2>
+                <input type="text" placeholder="Username" required>
+                <input type="password" placeholder="Password" required>
+                <button>Login</button><br>
+                <a  class="toggle-link" onclick="toggleForm()" >Don't have an account? Register</a>
+            </div>
+
+            <!-- Registration Form -->
+            <div id="registrationForm" style="display: none;">
+                <h2>Register</h2>
+                <input type="text" placeholder="Username" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <button>Register</button><br>
+                <a class="toggle-link" onclick="toggleForm()">Already have an account? Login</a>
+            </div>
+        </div>
+    </div>
+<!-- View Cart Button -->
+<div class="filter" id="filter-section">
+  <label for="category">Filter by Category:</label>
+  <select id="category">
+    <option value="all">All</option>
+    <option value="Men">Men</option>
+    <option value="Women">Women</option>
+  </select>
+  <label for="size">Filter by Size:</label>
+  <select id="size">
+    <option value="all">All Sizes</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+  </select>
+  <label for="price">Filter by Max Price:</label>
+  <input type="number" id="price" placeholder="Enter max price">
+</div>
+
+<!-- Products Section -->
+<script src="script.js"></script> 
+	  <h1>Your Cart</h1>
+  <div id="cart-items"></div>
+  <p id="total-price"></p>
+  <a href="shop.html" id="unique-link">Continue Shopping</a>
+  <script src="cart.js"></script>
+</body>
+
+<!-----------------------------------------------------------end of navigation ----------------------------------------------------------->
+
+<div class="features">
+  <div class="feature"> <img src="./img/shipping.png" alt="" class="featureIcon"> <span class="featureTitle">FREE SHIPPING</span> <span class="featureDesc">Free worldwide shipping on all orders.</span> </div>
+  <div class="feature"> <img class="featureIcon" src="./img/return.png" alt=""> <span class="featureTitle">30 DAYS RETURN</span> <span class="featureDesc">No question return and easy refund in 14 days.</span> </div>
+  <div class="feature"> <img class="featureIcon" src="./img/gift.png" alt=""> <span class="featureTitle">GIFT CARDS</span> <span class="featureDesc">Buy gift cards and use coupon codes easily.</span> </div>
+  <div class="feature"> <img class="featureIcon" src="./img/contact.png" alt=""> <span class="featureTitle">CONTACT US!</span> <span class="featureDesc">Keep in touch via email and support system.</span> </div>
+</div>
+<footer>
+  <div class="footerLeft">
+    <div class="footerMenu">
+      <h1 class="fMenuTitle">Products</h1>
+      <ul class="fList">
+        <li class="fListItem">Men's Shoes</li>
+        <li class="fListItem">Women's Shoes</li>
+        <li class="fListItem">Kids' Shoes</li>
+        <li class="fListItem">New Arrival</li>
+        <li class="fListItem">Sale</li>
+      </ul>
+    </div>
+    <div class="footerMenu">
+      <h1 class="fMenuTitle">About Us</h1>
+      <ul class="fList">
+        <li class="fListItem">Company</li>
+        <li class="fListItem">Contact</li>
+        <li class="fListItem">Careers</li>
+        <li class="fListItem">Affiliates</li>
+        <li class="fListItem">Stores</li>
+      </ul>
+    </div>
+    <div class="footerMenu">
+      <h1 class="fMenuTitle">Useful Links</h1>
+      <ul class="fList">
+        <li class="fListItem">Support</li>
+        <li class="fListItem">Refund</li>
+        <li class="fListItem">FAQ</li>
+        <li class="fListItem">Feedback</li>
+        <li class="fListItem">Stories</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footerRight">
+    <div class="footerRightMenu">
+      <h1 class="fMenuTitle">Subscribe to our newsletter</h1>
+      <div class="fMail">
+        <input type="text" placeholder="your@email.com" class="fInput">
+        <button class="fButton">Join!</button>
+      </div>
+    </div>
+    <div class="footerRightMenu">
+      <h1 class="fMenuTitle">Follow Us</h1>
+      <div class="fIcons"> <a href="#"><img src="./img/facebook.png" alt="" class="fIcon"></a> <a href="#"><img src="./img/twitter.png" alt="" class="fIcon"></a> <a href="#"><img src="./img/instagram.png" alt="" class="fIcon"></a> <a href="#"><img src="./img/whatsapp.png" alt="" class="fIcon"></a> <a href="#"><img src="./img/linkedin.png" alt="" class="fIcon"></a> </div>
+    </div>
+    <div class="footerRightMenu"> <span class="copyright">@elino_19. All rights reserved. 2025.</span> </div>
+  </div>
+</footer>
+<script src="./app.js"></script>
+<script>
+	//login page script
+    // Open the modal
+    function openModal() {
+      document.getElementById("loginModal").style.display = "flex";
+    }
+
+    // Close the modal
+    function closeModal() {
+      document.getElementById("loginModal").style.display = "none";
+    }
+
+    // Toggle between login and registration forms
+    function toggleForm() {
+      const loginForm = document.getElementById("loginForm");
+      const registrationForm = document.getElementById("registrationForm");
+
+      if (loginForm.style.display === "none") {
+        loginForm.style.display = "block";
+        registrationForm.style.display = "none";
+      } else {
+        loginForm.style.display = "none";
+        registrationForm.style.display = "block";
+      }
+    }
+
+    // Close modal if user clicks outside the modal content
+    window.onclick = function(event) {
+      const modal = document.getElementById("loginModal");
+      if (event.target === modal) {
+        modal.style.display = "none";
+      }
+    };
+  </script>
+</body>
+</html>
