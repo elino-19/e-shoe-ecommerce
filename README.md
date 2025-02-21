@@ -32,7 +32,7 @@ cd e-shoe-ecommerce
 ![Screenshot 2025-02-21 172155](https://github.com/user-attachments/assets/831a813f-10e0-4e47-9f89-f9468cf4c61d)
 
 ## 🔗 Live Demo
-[Live Demo](https://your-live-demo-link.com) *(if hosted)*
+[Live Demo] https://taupe-griffin-5fbac2.netlify.app/ 
 
 ## 🤝 Contributing
 This is a personal portfolio project, but feedback and suggestions are welcome! Feel free to fork the repo and submit pull requests.
